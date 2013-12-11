@@ -13,7 +13,7 @@ as it would otherwise defeat the purpose.
 
 Copyright Information
 ---------------------
-Copyright 2012 Chris Collins
+Copyright 2013 Chris Collins
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
