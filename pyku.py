@@ -8,7 +8,7 @@
 #
 # v0.5 - 2013-11-15
 #
-# Copyright 2013 Chris Collins
+# Copyright (C) 2013 Chris Collins
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
