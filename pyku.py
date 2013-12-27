@@ -34,6 +34,14 @@ debug_word = ""
 #   "oa" may be two syllables, eg. 'Croation'
 #   "-ed" is usually silent, unless following double t"s
 #   "-ier" is usually two syllables
+#   Some -le not being handled right:
+#       maybe any le following a vowel is 1 syllable
+#       and follwing a consonant is 2?
+#       ex. "tinkle" being shown as 1 syllable
+#   French-based words SUCK: "serviette" shown as 5 syllables
+#   "-es" still not quite right: debauches shown as 2 syllables
+#   What about "-iest"?  2 syllables: Roomiest being shown as 2 instead of 3
+#   Sonofa: Cheeseburger = 4 syllables. Tripping over the middle "e"
 
 ### Import the necessary modules ###
 # Import RE for regular expression matching
