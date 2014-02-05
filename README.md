@@ -7,8 +7,7 @@ In an attempt to learn python, I'm writing some random entertaining
 programs.  This is one of them.  Given that I'm still learning, don't 
 expect this to be coded anywhere close to a professional level.
 
-Comments and suggestions welcome.  Patches too, but I'll branch them 
-as it would otherwise defeat the purpose.
+Comments and suggestions welcome.  Patches too!
 
 
 Copyright Information
