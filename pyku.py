@@ -4,7 +4,7 @@
 # ====
 # Python-based random haiku generator
 #
-# Chris Collins, <christopher.collins@duke.edu>
+# Chris Collins, <collins.christopher@gmail.com>
 #
 # v0.5 - 2013-11-15
 #
@@ -223,45 +223,5 @@ def syleq():
     global syllables
     syllables = 0
 
-
-def modcount(mod):
-    if debug:
-        print "Leaving '" + mod + "' - "
-        print "Number of Syllables is, maybe: ", syllables
-
-
-### Deprecated Code
-
-# Was in trailing_e:
-
-    # Deprecated with combined trail_e_que function
-    #else:
-    #    # Finds trailing -que(s)
-    #    trail_que = re.findall(r"que[s]?$", random_word, re.IGNORECASE)
-    #    if trail_que:
-    #        if debug:
-    #            print trail_que
-    #            print "There is a trailing '-que'."
-    #        syldec(1)
-    #    else:  # Else no -e(s) OR -e(s) with preceeding vowels
-    #        if debug:
-    #            print "There is no trailing 'e(s)' character."
-
-# Used to be trailing_y:
-
-# Obsoleted by adding 'y' to vowel list
-# def trailing_y(random_word):
-#     """
-#     Check to see if the word ends in '-y',
-#     and is preceeded by a vowel, and
-#     increment the syllable count
-#     """
-#     trail_y = re.findall(r"[^aeiou]+?y$", random_word)
-#     if trail_y:
-#         print trail_y
-#         print "There is a trailing '-y' character."
-#         sylinc(1)
-#
-#     modcount("trailing_y")
 
 pyku()
