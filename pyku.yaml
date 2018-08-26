@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pyku
+  name: pyku
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pyku
+  template:
+    metadata:
+      labels:
+        app: pyku
+    spec:
+      containers:
+      - image: clcollins/pyku:latest
+        imagePullPolicy: Always
+        name: pyku
+        ports:
+        - containerPort: 9090
+          protocol: TCP
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pyku
+  labels:
+    app: pyku
+spec:
+  type: LoadBalancer
+  selector:
+    app: pyku
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 9090
