@@ -122,7 +122,7 @@ def randomword():
         random_word = debug_word
     else:
         # Open our word list
-        text = open("/var/www/html/american-english")
+        text = open(os.path.join(LOCAL_PATH, "american-english")
         words = text.read()
         random_word = random.choice(words.split())
 
