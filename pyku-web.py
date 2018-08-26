@@ -23,10 +23,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
+import os
 debug = False
 debug_word = ""
-LOCAL_PATH = "/var/www/html"
+LOCAL_PATH = os.path.dirname(os.path.realpath(__file__))
+
 
 ### TODO:###
 # Unhandled Exceptions:
